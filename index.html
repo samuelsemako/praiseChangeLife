@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-[#FFF] text-gray-900 pt-20">
+
+    <header
+      class="bg-[#6A0DAD] text-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+        <div class="flex items-center gap-2">
+          <img src="all-images/logo1.png" alt="Church Logo"
+            class="w-12 h-12 rounded-full border-2 bg-[#fff] border-[#FFFDD0]">
+          <h1 class="text-2xl font-bold">PRAISE CHANGE DIVINE LIFE GOSPEL
+            MINISTRY</h1>
+        </div>
+
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-[#FFFDD0] transition">Home</a>
+          <a href="#about" class="hover:text-[#FFFDD0] transition">About</a>
+          <a href="#events" class="hover:text-[#FFFDD0] transition">Events</a>
+          <a href="#sermons" class="hover:text-[#FFFDD0] transition">Sermons</a>
+          <a href="#contact" class="hover:text-[#FFFDD0] transition">Contact</a>
+        </nav>
+
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu"
+        class="hidden md:hidden bg-[#8B4513] text-white px-6 py-4 space-y-4">
+        <a href="#" class="block hover:text-[#FFFDD0] transition">Home</a>
+        <a href="#about" class="block hover:text-[#FFFDD0] transition">About</a>
+        <a href="#events"
+          class="block hover:text-[#FFFDD0] transition">Events</a>
+        <a href="#sermons"
+          class="block hover:text-[#FFFDD0] transition">Sermons</a>
+        <a href="#contact"
+          class="block hover:text-[#FFFDD0] transition">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-[90vh] flex items-center justify-center text-white">
+      <div class="absolute inset-0">
+        <img src="all-images/slide-image1.jpg" alt="Church Background"
+          class="w-full h-full object-cover">
+      </div>
+
+      <div class="relative z-10 text-center px-6 max-w-3xl">
+        <h1 id="church-name"
+          class="text-5xl md:text-6xl font-extrabold mb-6 opacity-0 transform translate-y-10 transition duration-1000 drop-shadow-lg">
+          <span class="text-[#FFFDD0]">PRAISE CHANGE DIVINE LIFE GOSPEL
+            MINISTRY</span>
+        </h1>
+
+        <p id="bible-verse"
+          class="text-lg md:text-xl mb-8 italic drop-shadow-md"></p>
+
+        <a href="#about"
+          class="bg-[#6A0DAD] px-8 py-3 rounded-full font-semibold hover:bg-purple-900 transition shadow-lg">
+          Learn More
+        </a>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#8B4513] via-transparent to-transparent"></div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="relative py-24 bg-[#eeeeee]">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    
+    <!-- Title -->
+    <h2 class="text-5xl font-extrabold text-[#6A0DAD] mb-8 animate-fade-in-down">
+      About Us
+    </h2>
+    <p class="text-lg text-gray-700 mb-16 max-w-3xl mx-auto animate-fade-in-up leading-relaxed">
+      We are a Christ-centered church committed to building lives and communities 
+      on the foundation of God’s Word. Our passion is to raise disciples who 
+      live with purpose, walk in love, and impact society with kingdom values. 
+      Through worship, discipleship, outreach, and service, we shine as light 
+      to the nations and bring transformation to generations.
+    </p>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-3 gap-12">
+      
+      <!-- Vision -->
+      <div class="bg-white shadow-xl rounded-2xl p-10 border-t-4 border-[#6A0DAD] 
+                  transition transform duration-500 animate-fade-in-up
+                  hover:scale-105 hover:shadow-2xl hover:border-[#8B4513] 
+                  hover:-translate-y-3 relative overflow-hidden group">
+        
+        <!-- Animated Border Glow -->
+        <span class="absolute inset-0 rounded-2xl border-2 border-transparent 
+                     group-hover:border-[#6A0DAD] transition duration-500"></span>
+        
+        <div class="text-[#6A0DAD] mb-6 relative z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="w-14 h-14 mx-auto" fill="none" 
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-[#8B4513] mb-4 relative z-10">Our Vision</h3>
+        <p class="text-gray-600 relative z-10">
+          To see lives transformed and nations discipled through the power of the Gospel.
+        </p>
+      </div>
+      
+      <!-- Mission -->
+      <div class="bg-white shadow-xl rounded-2xl p-10 border-t-4 border-[#6A0DAD] 
+                  transition transform duration-500 animate-fade-in-up delay-200
+                  hover:scale-105 hover:shadow-2xl hover:border-[#8B4513] 
+                  hover:-translate-y-3 relative overflow-hidden group">
+        
+        <span class="absolute inset-0 rounded-2xl border-2 border-transparent 
+                     group-hover:border-[#6A0DAD] transition duration-500"></span>
+        
+        <div class="text-[#6A0DAD] mb-6 relative z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="w-14 h-14 mx-auto" fill="none" 
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2v4c0 1.105 1.343 2 3 2s3-.895 3-2v-4c0-1.105-1.343-2-3-2z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-[#8B4513] mb-4 relative z-10">Our Mission</h3>
+        <p class="text-gray-600 relative z-10">
+          To preach the Gospel, disciple believers, and raise kingdom-minded leaders for Christ.
+        </p>
+      </div>
+      
+      <!-- Core Values -->
+      <div class="bg-white shadow-xl rounded-2xl p-10 border-t-4 border-[#6A0DAD] 
+                  transition transform duration-500 animate-fade-in-up delay-400
+                  hover:scale-105 hover:shadow-2xl hover:border-[#8B4513] 
+                  hover:-translate-y-3 relative overflow-hidden group">
+        
+        <span class="absolute inset-0 rounded-2xl border-2 border-transparent 
+                     group-hover:border-[#6A0DAD] transition duration-500"></span>
+        
+        <div class="text-[#6A0DAD] mb-6 relative z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="w-14 h-14 mx-auto" fill="none" 
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-[#8B4513] mb-4 relative z-10">Our Core Values</h3>
+        <p class="text-gray-600 relative z-10">
+          Faith, Love, Service, Integrity, and Excellence guide everything we do.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="services" class="relative py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Title -->
+    <h2 class="text-5xl font-extrabold text-center text-[#6A0DAD] mb-14 animate-fade-in-down">
+      Our Services
+    </h2>
+
+    <!-- Service 1 -->
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-20 group">
+      <!-- Left (Text) -->
+      <div class="animate-fade-in-left transition-all duration-700 ease-in-out">
+        <h3 class="text-3xl font-bold text-[#8B4513] mb-4 group-hover:text-[#6A0DAD] transition-colors duration-500">
+          Sunday Worship Service
+        </h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          Our Sunday worship service is the heart of our weekly gathering. Every Sunday, 
+          we come together as a family of believers to glorify God through heartfelt 
+          worship, prayer, and the teaching of God’s Word. Our services are designed 
+          to inspire, encourage, and strengthen your walk with Christ, leaving you 
+          renewed and empowered for the week ahead. We believe that worship is more 
+          than music—it is an expression of love and devotion to our Savior. From the 
+          choir to the congregation, every voice is lifted to honor God. The preaching 
+          is Christ-centered, practical, and Spirit-led, ensuring that the message is 
+          not only heard but applied in daily living.
+        </p>
+      </div>
+      <!-- Right (Image) -->
+      <div class="animate-fade-in-right transform transition duration-700 hover:scale-105">
+        <img src="all-images/sunday-service1.jpeg" alt="Sunday Worship Service"
+             class="rounded-2xl shadow-xl w-full h-[350px] object-cover">
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-20 group">
+      <!-- Left (Image) -->
+      <div class="animate-fade-in-left order-last md:order-first transform transition duration-700 hover:scale-105">
+        <img src="all-images/bible-study.png" alt="Bible Study"
+             class="rounded-2xl shadow-xl w-full h-[350px] object-cover">
+      </div>
+      <!-- Right (Text) -->
+      <div class="animate-fade-in-right transition-all duration-700 ease-in-out">
+        <h3 class="text-3xl font-bold text-[#8B4513] mb-4 group-hover:text-[#6A0DAD] transition-colors duration-500">
+          Midweek Bible Study
+        </h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          The Midweek Bible Study provides a deeper opportunity for learning, 
+          reflection, and growth. It is not just a service but an interactive 
+          experience where the Word of God is broken down in practical ways. 
+          Here, members are encouraged to ask questions, share insights, and 
+          discover new depths in Scripture. Our study sessions cover various 
+          themes such as Christian living, faith in action, leadership, family, 
+          and spiritual growth. Every session is designed to challenge the mind 
+          and nurture the soul, ensuring that every believer is equipped with 
+          sound doctrine and biblical wisdom. We believe in Acts 17:11, that 
+          believers should "search the Scriptures daily," and our Bible study 
+          creates the right atmosphere for this.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-20 group">
+      <!-- Left (Text) -->
+      <div class="animate-fade-in-left transition-all duration-700 ease-in-out">
+        <h3 class="text-3xl font-bold text-[#8B4513] mb-4 group-hover:text-[#6A0DAD] transition-colors duration-500">
+          Youth and Children’s Ministry
+        </h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          At our church, we believe in raising the next generation with the Word 
+          of God. Our Youth and Children’s Ministry provides a safe, nurturing, 
+          and exciting environment for young people to grow in faith. Through 
+          engaging activities, age-appropriate teachings, mentorship, and fun 
+          fellowship, we help children and youth build a strong foundation in Christ. 
+          Our dedicated teachers and youth leaders are passionate about helping 
+          young people understand their identity in Christ and equipping them 
+          to face the challenges of life with courage and wisdom. We also host 
+          regular youth-focused events, leadership programs, and creative outreaches 
+          that inspire them to use their gifts and talents for God’s glory.
+        </p>
+      </div>
+      <!-- Right (Image) -->
+      <div class="animate-fade-in-right transform transition duration-700 hover:scale-105">
+        <img src="all-images/youth.png" alt="Youth Ministry"
+             class="rounded-2xl shadow-xl w-full h-[350px] object-cover">
+      </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="grid md:grid-cols-2 gap-12 items-center group">
+      <!-- Left (Image) -->
+      <div class="animate-fade-in-left order-last md:order-first transform transition duration-700 hover:scale-105">
+        <img src="all-images/envagel.png" alt="Outreach Ministry"
+             class="rounded-2xl shadow-xl w-full h-[350px] object-cover">
+      </div>
+      <!-- Right (Text) -->
+      <div class="animate-fade-in-right transition-all duration-700 ease-in-out">
+        <h3 class="text-3xl font-bold text-[#8B4513] mb-4 group-hover:text-[#6A0DAD] transition-colors duration-500">
+          Community Outreach & Evangelism
+        </h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          Our church is deeply committed to serving our community through outreach 
+          and evangelism. We believe that the church is called to be the salt of 
+          the earth and the light of the world. Through various outreach programs, 
+          we extend the love of Christ to the less privileged, the needy, and 
+          those who have yet to know Him. Our initiatives include feeding programs, 
+          free medical outreach, prison ministry, and evangelistic crusades. We 
+          believe that evangelism is not optional but the heartbeat of God, and 
+          we actively seek to share the Gospel both locally and globally. Each 
+          outreach is carried out with compassion, excellence, and a strong 
+          commitment to making disciples of all nations. We are not only a 
+          worshiping church but also a serving and sending church.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="events" class="relative py-24 bg-gray-50 bg-cover bg-center bg-no-repeat"
+  style="background-image: url('all-images/s-bg.jpg');">
+  
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+
+    <!-- Title -->
+    <h2 class="text-5xl font-extrabold text-center text-white mb-14 animate-fade-in-down">
+      Upcoming Events
+    </h2>
+
+    <!-- Events Grid -->
+    <div class="grid md:grid-cols-3 gap-10">
+      
+      <!-- Event 1 -->
+      <div class="group bg-white rounded-2xl shadow-lg overflow-hidden 
+                  transform hover:-translate-y-3 hover:scale-105 transition-all duration-700 
+                  animate-fade-in-up hover:shadow-2xl border border-transparent hover:border-[#6A0DAD]">
+        <img src="all-images/fasting.jpeg" alt="Marathon Fasting" 
+             class="w-full h-52 object-cover group-hover:opacity-90 transition duration-500">
+        <div class="p-6">
+          <span class="text-sm font-semibold text-[#6A0DAD]">Aug 29-31, 2025</span>
+          <h3 class="text-2xl font-bold text-[#8B4513] mt-2">Marathon Fasting</h3>
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Join us for a powerful three days of fasting and prayer. 
+            We'll be setting aside this time to seek God's presence and 
+            ignite the fire of our faith as we pray together and worship in unity. 
+            Come prepared to experience God in a mighty way.
+          </p>
+          <button class="mt-5 px-4 py-2 bg-[#6A0DAD] text-white rounded-lg shadow-md hover:bg-[#520a99] transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="group bg-white rounded-2xl shadow-lg overflow-hidden 
+                  transform hover:-translate-y-3 hover:scale-105 transition-all duration-700 
+                  animate-fade-in-up delay-200 hover:shadow-2xl border border-transparent hover:border-[#6A0DAD]">
+        <img src="all-images/crusade.jpeg" alt="Open Air Crusade" 
+             class="w-full h-52 object-cover group-hover:opacity-90 transition duration-500">
+        <div class="p-6">
+          <span class="text-sm font-semibold text-[#6A0DAD]">Nov 20-23, 2025</span>
+          <h3 class="text-2xl font-bold text-[#8B4513] mt-2">Open Air Crusade</h3>
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Join us for our open-air prayer and word crusade!
+            Come expecting a powerful experience with deep Bible teaching, 
+            powerful preaching, and fellowship with believers from all walks of life. 
+            We'll be gathering together to see lives transformed.
+          </p>
+          <button class="mt-5 px-4 py-2 bg-[#6A0DAD] text-white rounded-lg shadow-md hover:bg-[#520a99] transition">
+            Register Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="group bg-white rounded-2xl shadow-lg overflow-hidden 
+                  transform hover:-translate-y-3 hover:scale-105 transition-all duration-700 
+                  animate-fade-in-up delay-400 hover:shadow-2xl border border-transparent hover:border-[#6A0DAD]">
+        <img src="all-images/mornPrayer.avif" alt="Early Morning Prayer" 
+             class="w-full h-52 object-cover group-hover:opacity-90 transition duration-500">
+        <div class="p-6">
+          <span class="text-sm font-semibold text-[#6A0DAD]">Dec 25-31, 2025</span>
+          <h3 class="text-2xl font-bold text-[#8B4513] mt-2">Early Morning Prayer</h3>
+          <p class="text-gray-600 mt-3 leading-relaxed">
+            Join us for the last seven days of the year for a special <strong>early morning prayer</strong>. 
+            For just two hours each day, we'll gather to pray together and bless the coming new year. 
+            Be a part of this movement of faith and prepare your heart for what's ahead.
+          </p>
+          <button class="mt-5 px-4 py-2 bg-[#6A0DAD] text-white rounded-lg shadow-md hover:bg-[#520a99] transition">
+            Get Involved
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="sermons" class="relative py-24 bg-[#FFFDD0]">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#6A0DAD]/85 via-[#8B4513]/90 to-[#6A0DAD]/85 opacity-90"></div>
+  
+  <div class="relative max-w-7xl mx-auto px-6 text-white">
+    <h2 class="text-5xl font-extrabold text-center mb-16 animate-fade-in-down">
+      Our Sermons
+    </h2>
+    <div class="grid md:grid-cols-2 gap-12">
+      
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-500 animate-fade-in-left">
+        <img src="all-images/sermon1.png" alt="Sermon" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-[#FFFDD0]">Walking in the Light</h3>
+          <p class="text-sm text-gray-200 mt-2">Preached on August 10, 2025</p>
+          <audio controls class="mt-4 w-full">
+            <source src="all-sermons/sermon1.mp3" type="audio/mpeg">
+          </audio>
+          <p class="mt-5 text-gray-100 leading-relaxed text-lg">
+            This sermon reminds us of the eternal truth from 1 John 1:5 — 
+            “God is light, in Him there is no darkness at all.” To walk in the light is 
+            to walk in truth, love, and integrity. Pastor taught that light exposes, heals, 
+            and guides, and we must let God’s light shine through us in all areas of life.  
+            We are called to reflect Christ’s light in our families, workplaces, schools, 
+            and communities. When believers unite, their lights become a beacon that cannot 
+            be hidden. The message ended with a charge: examine your life and let go of 
+            anything that dims your light, while staying rooted in prayer and the Word.
+          </p>
+          <button class="mt-5 px-5 py-2 bg-[#6A0DAD] text-white font-semibold rounded-lg shadow-md hover:bg-[#520a99] transition">
+            Watch Full Video
+          </button>
+        </div>
+      </div>
+
+      <!-- Sermon 2 -->
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-500 animate-fade-in-right">
+        <img src="all-images/sermon2.png" alt="Sermon" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-[#FFFDD0]">Faith that Moves Mountains</h3>
+          <p class="text-sm text-gray-200 mt-2">Preached on August 17, 2025</p>
+          <audio controls class="mt-4 w-full">
+            <source src="all-sermons/sermon2.mp3" type="audio/mpeg">
+          </audio>
+          <p class="mt-5 text-gray-100 leading-relaxed text-lg">
+            In this sermon, Pastor emphasized the power of faith rooted in Christ.  
+            Drawing from Matthew 17:20, he explained that true faith is not about 
+            the size of our belief but the size of our God. Faith grows through 
+            obedience, prayer, and trust in God’s promises. When life presents 
+            “mountains” of fear, failure, or delay, faith speaks boldly that 
+            nothing is impossible with God. Pastor also reminded the church that 
+            faith is not passive — it must be active, accompanied by works of love, 
+            patience, and perseverance. The congregation was encouraged to step 
+            into new seasons with confidence, declaring God’s word over their 
+            situations and expecting supernatural breakthroughs.
+          </p>
+          <button class="mt-5 px-5 py-2 bg-[#8B4513] text-white font-semibold rounded-lg shadow-md hover:bg-[#5e3010] transition">
+            Watch Full Video
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="ministries" class="relative py-24 bg-[#fdfcf8] overflow-hidden">
+  <!-- Background decoration -->
+  <div class="absolute inset-0 bg-gradient-to-tr from-[#FFFDD0]/70 via-[#8B4513]/5 to-[#6A0DAD]/10"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6">
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-extrabold text-[#6A0DAD] animate-fade-in-down">
+        Our Ministries
+      </h2>
+      <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto animate-fade-in-up">
+        Every member has a place to serve and grow. Our ministries are built to strengthen faith, 
+        impact lives, and extend God’s love into the community. Find your place in one of our vibrant ministries below.
+      </p>
+    </div>
+
+    <!-- Ministries Grid -->
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Ministry Card 1 -->
+      <div class="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="all-images/choir.jpg" alt="Choir Ministry" class="h-60 w-full object-cover group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h3 class="text-2xl font-bold">Choir Ministry</h3>
+          <p class="text-sm mt-2 max-w-sm">
+            Leading the congregation in heartfelt worship through music that lifts the soul and glorifies God. 
+            The choir sets the atmosphere for God’s presence in every service.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ministry Card 2 -->
+      <div class="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="all-images/youth1.webp" alt="Youth Ministry" class="h-60 w-full object-cover group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h3 class="text-2xl font-bold">Youth Ministry</h3>
+          <p class="text-sm mt-2 max-w-sm">
+            Equipping the next generation to live boldly for Christ through mentorship, fellowship, and 
+            leadership training that prepares them to impact the world.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ministry Card 3 -->
+      <div class="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="all-images/women.webp" alt="Women Ministry" class="h-60 w-full object-cover group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h3 class="text-2xl font-bold">Women Ministry</h3>
+          <p class="text-sm mt-2 max-w-sm">
+            Empowering women to grow in faith, nurture their families, and be godly examples in the community through prayer, teaching, and service.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ministry Card 4 -->
+      <div class="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="all-images/men.jpeg" alt="Men Ministry" class="h-60 w-full object-cover group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h3 class="text-2xl font-bold">Men Ministry</h3>
+          <p class="text-sm mt-2 max-w-sm">
+            Building strong men of faith who take leadership in the home, church, and society, walking in integrity and the fear of the Lord.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ministry Card 5 -->
+      <div class="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="all-images/children.jpeg" alt="Children Ministry" class="h-60 w-full object-cover group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h3 class="text-2xl font-bold">Children Ministry</h3>
+          <p class="text-sm mt-2 max-w-sm">
+            Raising children in the way of the Lord with engaging Bible lessons, fun activities, 
+            and love that builds a solid foundation for their future.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ministry Card 6 -->
+      <div class="relative group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500">
+        <img src="all-images/outreach.jpg" alt="Outreach Ministry" class="h-60 w-full object-cover group-hover:scale-110 transition duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition"></div>
+        <div class="absolute bottom-6 left-6 text-white">
+          <h3 class="text-2xl font-bold">Outreach Ministry</h3>
+          <p class="text-sm mt-2 max-w-sm">
+            Extending the love of Christ beyond the church walls through evangelism, charity, and community development initiatives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="relative py-24 bg-gradient-to-r from-[#6A0DAD]/10 via-[#FFFDD0]/40 to-[#8B4513]/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-extrabold text-[#6A0DAD] animate-fade-in-down">Church Gallery</h2>
+      <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto animate-fade-in-up">
+        A glimpse of our vibrant worship, joyful fellowship, and impactful outreach moments. 
+        Every picture tells a story of God’s faithfulness among us.
+      </p>
+    </div>
+
+    <!-- Gallery Masonry Grid -->
+    <div class="columns-1 sm:columns-2 md:columns-3 gap-6 space-y-6">
+      <!-- Photo Item -->
+      <div class="relative group overflow-hidden rounded-2xl shadow-xl">
+        <img src="all-images/youth.png" alt="Gallery 1" class="w-full rounded-2xl transform group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+          <p class="text-white text-lg font-semibold">Youth Conference</p>
+        </div>
+      </div>
+
+      <div class="relative group overflow-hidden rounded-2xl shadow-xl">
+        <img src="all-images/bible-study.png" alt="Gallery 2" class="w-full rounded-2xl transform group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+          <p class="text-white text-lg font-semibold">Bible Study</p>
+        </div>
+      </div>
+
+      <div class="relative group overflow-hidden rounded-2xl shadow-xl">
+        <img src="all-images/sunday-service.jpeg" alt="Gallery 3" class="w-full rounded-2xl transform group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+          <p class="text-white text-lg font-semibold">Exhortation</p>
+        </div>
+      </div>
+
+      <div class="relative group overflow-hidden rounded-2xl shadow-xl">
+        <img src="all-images/sunday-service1.jpeg" alt="Gallery 4" class="w-full rounded-2xl transform group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+          <p class="text-white text-lg font-semibold">Sermon</p>
+        </div>
+      </div>
+
+      <div class="relative group overflow-hidden rounded-2xl shadow-xl">
+        <img src="all-images/envagel.png" alt="Gallery 5" class="w-full rounded-2xl transform group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+          <p class="text-white text-lg font-semibold">Evangelism</p>
+        </div>
+      </div>
+
+      <div class="relative group overflow-hidden rounded-2xl shadow-xl">
+        <img src="all-images/crusade.jpeg" alt="Gallery 6" class="w-full rounded-2xl transform group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+          <p class="text-white text-lg font-semibold">Open Air Crusade</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-12">
+      <a href="#" class="px-8 py-4 bg-[#6A0DAD] text-white font-semibold rounded-full shadow-lg hover:bg-[#8B4513] transition">
+        View Full Gallery
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="relative py-24 bg-gradient-to-r from-[#6A0DAD]/20 via-[#FFFDD0]/40 to-[#8B4513]/20 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-extrabold text-[#6A0DAD] drop-shadow-lg animate-fade-in-down">
+        Let’s Connect
+      </h2>
+      <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto animate-fade-in-up">
+        We’re always happy to hear from you — whether it’s a prayer request, a testimony, or just to say hello.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Contact Card -->
+      <div class="space-y-8">
+        <div class="p-8 rounded-2xl backdrop-blur-lg bg-white/60 border border-white/30 shadow-xl hover:scale-105 transition duration-500 animate-fade-in-left">
+          <div class="flex items-center space-x-4">
+            <div class="w-14 h-14 bg-gradient-to-tr from-[#6A0DAD] to-[#8B4513] text-white flex items-center justify-center rounded-full shadow-md animate-bounce">
+              📍
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-[#6A0DAD]">Visit Us</h4>
+              <p class="text-gray-700">123 Faith Avenue, Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-2xl backdrop-blur-lg bg-white/60 border border-white/30 shadow-xl hover:scale-105 transition duration-500 animate-fade-in-left">
+          <div class="flex items-center space-x-4">
+            <div class="w-14 h-14 bg-gradient-to-tr from-[#8B4513] to-[#6A0DAD] text-white flex items-center justify-center rounded-full shadow-md animate-bounce">
+              📞
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-[#8B4513]">Call Us</h4>
+              <p class="text-gray-700">+234 800 123 4567</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-2xl backdrop-blur-lg bg-white/60 border border-white/30 shadow-xl hover:scale-105 transition duration-500 animate-fade-in-left">
+          <div class="flex items-center space-x-4">
+            <div class="w-14 h-14 bg-gradient-to-tr from-[#FFFDD0] to-[#6A0DAD] text-[#6A0DAD] flex items-center justify-center rounded-full shadow-md animate-bounce">
+              ✉️
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-[#6A0DAD]">Email</h4>
+              <p class="text-gray-700">contact@yourchurch.org</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white/60 backdrop-blur-lg p-10 rounded-2xl shadow-2xl border border-white/30 animate-fade-in-right">
+        <h3 class="text-2xl font-bold text-[#8B4513] mb-6">Send Us a Message</h3>
+        <form action="#" method="POST" class="space-y-6">
+          <div>
+            <input type="text" name="name" placeholder="Your Name" required
+              class="w-full px-4 py-3 rounded-lg bg-white/80 border border-gray-200 focus:ring-2 focus:ring-[#6A0DAD] focus:outline-none transition">
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Your Email" required
+              class="w-full px-4 py-3 rounded-lg bg-white/80 border border-gray-200 focus:ring-2 focus:ring-[#8B4513] focus:outline-none transition">
+          </div>
+          <div>
+            <textarea name="message" rows="4" placeholder="Your Message" required
+              class="w-full px-4 py-3 rounded-lg bg-white/80 border border-gray-200 focus:ring-2 focus:ring-[#6A0DAD] focus:outline-none transition"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 px-6 bg-gradient-to-r from-[#6A0DAD] to-[#8B4513] hover:scale-105 text-white rounded-lg shadow-lg font-semibold transition duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Glow -->
+  <div class="absolute -top-10 -left-10 w-72 h-72 bg-[#6A0DAD]/20 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#8B4513]/20 rounded-full blur-3xl animate-pulse"></div>
+</section>
+
+<footer class="relative bg-gradient-to-r from-[#6A0DAD] via-[#8B4513] to-[#6A0DAD] text-white py-16 mt-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+    
+    <!-- Logo & Intro -->
+    <div class="space-y-4 animate-fade-in-up">
+      <img src="all-images/logo1.png" alt="Church Logo" class="w-16 h-16 rounded-full border-2 border-[#FFFDD0] shadow-md">
+      <p class="text-gray-200 text-sm leading-relaxed">
+        Our church is a place of worship, fellowship, and growth in God’s Word.  
+        We exist to impact lives and spread God’s love in every community.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="animate-fade-in-up">
+      <h4 class="text-xl font-semibold mb-4 text-[#FFFDD0]">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#about" class="hover:text-[#FFFDD0] transition">About Us</a></li>
+        <li><a href="#services" class="hover:text-[#FFFDD0] transition">Services</a></li>
+        <li><a href="#events" class="hover:text-[#FFFDD0] transition">Events</a></li>
+        <li><a href="#sermon" class="hover:text-[#FFFDD0] transition">Sermons</a></li>
+        <li><a href="#ministries" class="hover:text-[#FFFDD0] transition">Ministries</a></li>
+        <li><a href="#contact" class="hover:text-[#FFFDD0] transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="animate-fade-in-up">
+      <h4 class="text-xl font-semibold mb-4 text-[#FFFDD0]">Get in Touch</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-center space-x-3">
+          <span class="text-[#FFFDD0]">📍</span>
+          <span>123 Faith Avenue, Lagos, Nigeria</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="text-[#FFFDD0]">📞</span>
+          <span>+234 800 123 4567</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="text-[#FFFDD0]">✉️</span>
+          <span>contact@yourchurch.org</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="animate-fade-in-up">
+      <h4 class="text-xl font-semibold mb-4 text-[#FFFDD0]">Newsletter</h4>
+      <p class="text-sm mb-4 text-gray-200">
+        Subscribe to receive church updates, sermons, and events directly in your inbox.
+      </p>
+      <form action="#" method="POST" class="flex space-x-2">
+        <input type="email" placeholder="Your Email" class="w-full px-3 py-2 rounded-lg text-gray-900 focus:outline-none">
+        <button type="submit" class="px-4 py-2 bg-[#FFFDD0] text-[#6A0DAD] font-semibold rounded-lg hover:scale-105 transition">Go</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-white/20 mt-12 pt-6 text-center text-sm text-gray-200 animate-fade-in-up flex flex-col md:flex-row justify-between items-center px-12">
+    <p>&copy; <span id="year"></span> Your Church Name. All rights reserved.</p>
+    <p class="mt-2">
+      Designed with ❤️ using <span class="text-[#FFFDD0]">HTML & TailwindCSS</span>.
+    </p>
+  </div>
+
+  <!-- Background Glow -->
+  <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-[#FFFDD0]/20 rounded-full blur-3xl animate-pulse"></div>
+  <div class="absolute -top-10 -right-10 w-72 h-72 bg-[#FFFDD0]/20 rounded-full blur-3xl animate-pulse"></div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  </body>
+</html>
