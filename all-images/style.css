@@ -1,0 +1,24 @@
+  /* Smooth fade for verses */
+  #bible-verse {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  .animate-fade-in-down {
+    animation: fadeInDown 1s ease forwards;
+    opacity: 0;
+  }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-400 { animation-delay: 0.4s; }
